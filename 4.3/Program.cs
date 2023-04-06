@@ -10,7 +10,7 @@ namespace _4._3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Введите свое имя");
+            /*Console.WriteLine("Введите свое имя");
             string name = Console.ReadLine();
             Console.WriteLine("Ваше имя по буквам:");
 
@@ -18,7 +18,16 @@ namespace _4._3
             {
                 Console.Write(i + " ");
             }
-            Console.WriteLine($"  Последняя буква вашего имени: {name[name.Length - 1]}");
+            Console.WriteLine($"  Последняя буква вашего имени: {name[name.Length - 1]}");*/
+
+            Console.WriteLine("Введите ваше имя");
+            string name = Console.ReadLine();
+
+            for(int i = name.Length - 1; i >= 0; i--)
+            {
+                Console.Write(name[i]);
+            }
+            Console.WriteLine();
         }
     }
 }
