@@ -33,8 +33,6 @@ namespace _4._1
                 Console.WriteLine("Напишите свой любимый цвет на английском с маленькой буквы");
                 switch (Console.ReadLine())
                 {
-
-
                     case "red":
                         Console.BackgroundColor = ConsoleColor.Red;
                         Console.ForegroundColor = ConsoleColor.Black;
@@ -55,13 +53,8 @@ namespace _4._1
 
                         Console.WriteLine("Your color is cyan!");
                         break;
-
                     default:
-                        Console.BackgroundColor = ConsoleColor.Yellow;
-                        Console.ForegroundColor = ConsoleColor.Red;
-
-                        Console.WriteLine("Your color is cyan!");
-                        break;
+                        continue;
                 }
                 t++;
             }
