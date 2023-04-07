@@ -29,15 +29,47 @@ namespace _4._3
             }
             Console.WriteLine(); */
 
-            int[,] array = { { 1, 2, 3 }, { 5, 6, 7 }, { 8, 9, 10 }, { 11, 12, 13 } };
+            /*int[,] array = { { 1, 2, 3 }, { 5, 6, 7 }, { 8, 9, 10 }, { 11, 12, 13 } };
 
             for (int i = 0; i < array.GetLength(1); i++)
             {
                 for (int k = 0; k < array.GetLength(0); k++)
-                    Console.Write(array[k,i] + " ");
+                    Console.Write(array[k, i] + " ");
 
-                Console.WriteLine();
+                Console.WriteLine();*/
+
+            var arr = new int[] { 5, 6, 9, 1, 2, 3, 4 };
+
+            int temp;
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                for (int j = i + 1; j < arr.Length; j++)
+                {
+                    if (arr[i] > arr[j])
+                    {
+                        temp = arr[i];
+                        arr[i] = arr[j];
+                        arr[j] = temp;
+                    }
+                }
             }
+
+            foreach (var item in arr)
+            {
+                Console.Write(item);
+            }
+
+            Console.WriteLine();
+
+            int sum;
+                sum = arr[0];
+
+            for (int i = 1;i < arr.Length; i++)
+            {
+                sum += + arr[i];
+            }
+            Console.WriteLine(sum);
         }
     }
 }
