@@ -29,10 +29,14 @@ namespace _4._3
             }
             Console.WriteLine(); */
 
-            int[,] array = { { 1, 2, 3 }, { 5, 6, 7 } };
-            foreach (var item in array)
+            int[,] array = { { 1, 2, 3 }, { 5, 6, 7 }, { 8, 9, 10 }, { 11, 12, 13 } };
+
+            for (int i = 0; i < array.GetLength(1); i++)
             {
-                Console.Write(item + " ");
+                for (int k = 0; k < array.GetLength(0); k++)
+                    Console.Write(array[k,i] + " ");
+
+                Console.WriteLine();
             }
         }
     }
