@@ -38,7 +38,7 @@ namespace _4._3
 
                 Console.WriteLine();*/
 
-            var arr = new int[] { 5, 6, 9, 1, 2, 3, 4 };
+            /*var arr = new int[] { 5, 6, 9, 1, 2, 3, 4 };
 
             int temp;
 
@@ -69,7 +69,7 @@ namespace _4._3
             {
                 sum += + arr[i];
             }
-            Console.WriteLine(sum);
+            Console.WriteLine(sum);*/
         }
     }
 }
