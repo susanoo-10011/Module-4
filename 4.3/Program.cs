@@ -115,7 +115,7 @@ namespace _4._3
             }
             Console.WriteLine(count);*/
 
-            //4.3.17
+            /*//4.3.17
             int[,] arr = { { -5, 6, 9, 1, 2, -3 }, { -8, 8, 1, 1, 2, -3 } };
             int temp;
             for (int i = 0; i <= arr.GetUpperBound(0); i++)
@@ -132,7 +132,23 @@ namespace _4._3
                         }
                     }
                 }
-            }
+            }*/
+
+            //4.4.2
+            var (name, age) = ("Егор", 19);
+
+            Console.WriteLine($"Мое имя: {name}");
+            Console.WriteLine($"Мой возраст с цифрами: {age}");
+
+            Console.Write("Введите имя: ");
+            name = Console.ReadLine();
+            Console.Write("Введите возраст с цифрами:");
+            age = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Ваше имя: {0}", name);
+            Console.WriteLine("Ваш возраст: {0}", age);
+
+            Console.ReadKey();
         }
     }
 }
