@@ -134,7 +134,7 @@ namespace _4._3
                 }
             }*/
 
-            //4.4.2
+            /* //4.4.2
             var (name, age) = ("Егор", 19);
 
             Console.WriteLine($"Мое имя: {name}");
@@ -148,7 +148,19 @@ namespace _4._3
             Console.WriteLine("Ваше имя: {0}", name);
             Console.WriteLine("Ваш возраст: {0}", age);
 
-            Console.ReadKey();
+            Console.ReadKey();*/
+
+            /* //4.4.5
+            (string Name, string Type, double Age, int NameCount) Pet;
+
+            Console.WriteLine("Введите имя питомца");
+            Pet.Name = Console.ReadLine();
+            Console.WriteLine("Введите вид питомца");
+            Pet.Type = Console.ReadLine();
+            Console.WriteLine("Введите возрас питомца");
+            Pet.Age = Convert.ToDouble(Console.ReadLine());
+            Pet.NameCount = Pet.Name.Length;*/
+
         }
     }
 }
