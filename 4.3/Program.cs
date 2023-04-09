@@ -71,17 +71,66 @@ namespace _4._3
             }
             Console.WriteLine(sum);*/
 
+            /* //4.3.14
             int[][] array = new int[3][];
 
             array[0] = new int[2] { 1, 2 };
             array[1] = new int[3] { 1, 2, 3 };
             array[2] = new int[5] { 1, 2, 3, 4, 5 };
 
-            foreach (var num in array)
+            foreach (int[] num in array)
             {
-                foreach (var item in num)
+                foreach (int item in num)
                 {
                     Console.Write(item + " ");
+                }
+            }*/
+
+            /* // 4.3.15
+            int[] array = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, };
+            int count = 0;
+
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (array[i] > 0)
+                {
+                    count++;
+                }
+            }
+            Console.WriteLine(count);*/
+
+            /* //4.3.16
+            int[,] arr = { { -5, 6, 9, 1, 2, -3 }, { -8, 8, 1, 1, 2, -3 } };
+            int count = 0;
+
+            for (int i = 0; i < arr.GetLength(0); i++)
+            {
+                for (int j = 0; j < arr.GetLength(1); j++)
+                {
+                    if (arr[i, j] > 0)
+                    {
+                        count++;
+                    }
+                }
+            }
+            Console.WriteLine(count);*/
+
+            //4.3.17
+            int[,] arr = { { -5, 6, 9, 1, 2, -3 }, { -8, 8, 1, 1, 2, -3 } };
+            int temp;
+            for (int i = 0; i <= arr.GetUpperBound(0); i++)
+            {
+                for (int j = 0; j <= arr.GetUpperBound(1); j++)
+                {
+                    for(int k = j + 1; k <= arr.GetUpperBound(1); k++)
+                    {
+                        if (arr[i, j] > arr[i, k])
+                        {
+                            temp = arr[i, k];
+                            arr[i, k] = arr[i, j];
+                            arr[i, j] = temp;
+                        }
+                    }
                 }
             }
         }
